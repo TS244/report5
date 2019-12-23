@@ -1,12 +1,21 @@
 package jp.ac.uryukyu.ie.e185428;
 
+/**
+ * Enemy, Heroのスーパークラス。
+ */
 public class LivingThing {
     private String name;
     private int hitPoint;
     private int attack;
     private boolean dead;
 
-    LivingThing(String name, int maximumHP, int attack){
+    /**
+     * 名前、最大HP、攻撃力を指定。
+     * @param name キャラクターの名前。
+     * @param maximumHP　キャラクターの最大HP。
+     * @param attack　キャラクターの攻撃力。
+     */
+    public LivingThing(String name, int maximumHP, int attack){
         this.name = name;
         hitPoint = maximumHP;
         this.attack = attack;
@@ -67,3 +76,4 @@ public class LivingThing {
 
 
 }
+
